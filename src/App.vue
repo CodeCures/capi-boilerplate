@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 const count = ref(0)
-
+const counter = computed(() => `Current count (${count.value}) + 1 = ${count.value + 1}`)
 </script>
 
 <template>
